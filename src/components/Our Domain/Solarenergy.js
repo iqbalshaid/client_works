@@ -33,7 +33,7 @@ const SolarEnergy = ()=>{
     style={{ 
       width: '100%',  
       borderRadius: '8px', 
-        height:'100%',
+        height:'auto',
       objectFit:'cover'
     }} 
   />
