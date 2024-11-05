@@ -23,7 +23,7 @@ const SolarEnergy = ()=>{
       <div>
       <div style={{ backgroundColor: "#e1b470" }}>
         <h1 style={{ textAlign: "center", fontSize: "4rem", fontWeight: "bold", color: "blue" }}> Solar Energy</h1>
-        <div style={{ width: "80%", margin: "10px auto" }}>
+        <div style={{ width: "80%", margin: "10px auto",height:'500px' }}>
           <Slider {...settings}>
             {images.map((src, index) => (
               <div key={index} style={{ textAlign: "center", color: "#333" }}>
@@ -33,7 +33,7 @@ const SolarEnergy = ()=>{
     style={{ 
       width: '100%',  
       borderRadius: '8px', 
-        height:'50vh',
+        height:'100%',
       objectFit:'cover'
     }} 
   />
