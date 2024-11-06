@@ -16,11 +16,11 @@ const Whatwedo = () => {
           <h5 className="label">TECHNOLOGY DEMONSTRATION CENTRES</h5>
           <img src={incubator} alt="Technology Demonstration" className="image" />
         </div></Link>
-        <Link to={'/incubation'} style={{textDecoration:'none'}}><div className="section">
+        <Link to={'/rural'} style={{textDecoration:'none'}}><div className="section">
           <h5 className="label">RURAL BUSINESS PROMOTION CENTRES</h5>
           <img src={rural} alt="Rural Business Promotion" className="image" />
         </div></Link>
-        <Link to={'/rural'} style={{textDecoration:'none'}}><div className="section">
+        <Link to={'/incubation'} style={{textDecoration:'none'}}><div className="section">
           <h5 className="label">TECHNOLOGY INCUBATION CENTRES</h5>
           <img src={incubation} alt="Technology Incubation" className="image" />
         </div></Link>
