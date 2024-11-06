@@ -23,8 +23,11 @@ const CleanWater = ()=>{
     };
   
     return (
-      <div>
-      <div style={{ backgroundColor: "#e1b470" }}>
+    
+      <div style={{ backgroundColor: "#e1b470", padding: "40px",
+        textAlign: "center",
+        fontFamily: "'Times New Roman', Times, serif",
+        color: "#333", }}>
         <h1 style={{ textAlign: "center", fontSize: "4rem", fontWeight: "bold", color: "blue" }}>Safe Drinking Water</h1>
         <div style={{ width: "80%", margin: "10px auto" }}>
           <Slider {...settings}>
@@ -71,7 +74,7 @@ provide clean and safe water
         </ul>
       </div>
      
-      </div>
+     
     )
 }
 export default CleanWater;
