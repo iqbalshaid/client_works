@@ -21,10 +21,13 @@ const Sanitation = ()=>{
     };
   
     return (
-      <div>
-      <div style={{ backgroundColor: "#e1b470" }}>
+      
+      <div style={{ backgroundColor: "#e1b470",padding: "40px",
+        textAlign: "center",
+        fontFamily: "'Times New Roman', Times, serif",
+        color: "#333", }}>
         <h1 style={{ textAlign: "center", fontSize: "4rem", fontWeight: "bold", color: "blue" }}>Sanitation </h1>
-        <div style={{ width: "80%", margin: "10px auto" }}>
+        <div style={{ width: "60%", margin: "0 auto 40px auto" }}>
           <Slider {...settings}>
             {images.map((src, index) => (
               <div key={index} style={{ textAlign: "center", color: "#333" }}>
@@ -32,9 +35,11 @@ const Sanitation = ()=>{
     src={src} 
     alt={`Slide ${index}`} 
     style={{ 
-      width: '100%',  
-      borderRadius: '8px', 
-      objectFit:'cover'
+      width: "100%",
+                  height: "400px",
+                  borderRadius: "8px",
+                  objectFit: "contain",
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     }} 
   />
                
@@ -59,7 +64,7 @@ technologies in villages and cities
        
       </div>
       
-      </div>
+      
     )
 }
 export default Sanitation;
