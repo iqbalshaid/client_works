@@ -26,8 +26,15 @@ const FoodProcessing = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    arrows:false,
+    arrows: false,
     autoplaySpeed: 3000,
+  };
+
+  // Helper function for responsive font size
+  const getResponsiveFontSize = (desktopSize, tabletSize, mobileSize) => {
+    if (window.innerWidth > 1024) return desktopSize;
+    if (window.innerWidth > 768) return tabletSize;
+    return mobileSize;
   };
 
   return (
@@ -41,9 +48,10 @@ const FoodProcessing = () => {
       }}
     >
       <header style={{ marginBottom: "30px" }}>
+        {/* Responsive Heading */}
         <h1
           style={{
-            fontSize: "3.5rem",
+            fontSize: getResponsiveFontSize("3.5rem", "2.8rem", "2rem"), // Adjust font size based on device
             fontWeight: "bold",
             color: "#2c3e50",
           }}
@@ -51,14 +59,14 @@ const FoodProcessing = () => {
           Food Preservation and Food Irradiation
         </h1>
       </header>
-      
-      <div style={{ width: "60%", margin: "0 auto 40px auto" }}>
+
+      <div style={{ width: "80%", maxWidth: "800px", margin: "0 auto 40px auto" }}>
         <Slider {...settings}>
           {images.map((src, index) => (
             <div key={index} style={{ textAlign: "center" }}>
               <img
                 src={src}
-                alt={`Slide ${index}`}
+                alt={Slide ${index}}
                 style={{
                   width: "100%",
                   height: "400px",
@@ -67,7 +75,13 @@ const FoodProcessing = () => {
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                 }}
               />
-              <h3 style={{ marginTop: "10px", fontSize: "18px", color: "#333" }}>
+              <h3
+                style={{
+                  marginTop: "10px",
+                  fontSize: getResponsiveFontSize("1.2rem", "1rem", "0.9rem"),
+                  color: "#333",
+                }}
+              >
                 {texts[index]}
               </h3>
             </div>
@@ -78,7 +92,8 @@ const FoodProcessing = () => {
       <section
         style={{
           margin: "20px auto",
-          width: "60%",
+          width: "80%",
+          maxWidth: "800px",
           textAlign: "left",
         }}
       >
@@ -87,7 +102,7 @@ const FoodProcessing = () => {
             <li
               key={index}
               style={{
-                fontSize: "16px",
+                fontSize: "1rem",
                 color: "black",
                 fontWeight: "400",
                 margin: "10px 0",
