@@ -1,6 +1,5 @@
 .container {
-    max-width: 1200px; /* Increased maximum width for a more expansive layout */
-    margin: 40px auto;
+    width:100%; /* Increased maximum width for a more expansive layout */
     padding: 20px;
     background-color: #e1b470; /* Soft cream background */
     border: 1px solid #d3b82f; /* Classic golden border */
@@ -47,7 +46,7 @@
     margin-top: 30px;
     padding: 10px;
     border-radius: 8px;
-    background-color: #f0ebe4; /* Slightly darker background for focus sections */
+     /* Slightly darker background for focus sections */
 }
 
 .focus-section h2 {
