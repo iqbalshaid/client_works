@@ -18,6 +18,10 @@ import About_us from './components/About_us';
 import Founder from './components/Founder/Founder';
 import Founder1 from './components/Founder/Founder1';
 import Founder2 from './components/Founder/Founder2';
+import Mission from './components/OurMission';
+import Centres from './components/Mission/Demonstration';
+import Incubation from './components/Mission/Incubation';
+import Rural from './components/Mission/RuralBuisness';
 
 function App() {
   return (
@@ -38,7 +42,10 @@ function App() {
         <Route path='/founder' element = {<Founder />} />
         <Route path='/founder1' element = {<Founder1 />} />
         <Route path='/founder2' element = {<Founder2 />} />
-
+        <Route path = "/mission" element = {<Mission />} />
+        <Route path = "/demonstration" element = {<Centres />} />
+        <Route path='/incubation' element = {<Incubation />} />
+        <Route path='/rural' element = {<Rural />} />
       </Routes>
       <About_us />
     </BrowserRouter>
