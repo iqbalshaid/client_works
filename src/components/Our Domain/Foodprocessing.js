@@ -31,11 +31,7 @@ const FoodProcessing = ()=>{
   
     return (
       <div>
-      <div style={{ backgroundColor: "#e1b470", 
-    display: "flex", 
-    justifyContent: "space-between", 
-    gap: "40px", 
-    margin: "0px 30px"  }}>
+      <div style={{ backgroundColor: "#e1b470" }}>
         <h1 style={{ textAlign: "center", fontSize: "4rem", fontWeight: "bold", color: "blue" }}>Food Preservation and Food Irradiation</h1>
         <div style={{ width: "80%", margin: "10px auto" }}>
           <Slider {...settings}>
