@@ -15,7 +15,7 @@ const Home = () => {
             <div className="text-contained">
                 <div className="image-text-row">
                     <div className="image-container">
-                        <Link to="/our-mission">
+                        <Link to="/mission">
                             <img src={tech} alt="Technology Icons" className="tech-image" />
                         </Link>
                     </div>
