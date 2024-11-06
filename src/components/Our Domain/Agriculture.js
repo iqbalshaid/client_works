@@ -1,3 +1,4 @@
+
 import React from "react";
 import ag from "../../photos/ag.png";
 import ag1 from "../../photos/ag1.png";
@@ -35,42 +36,71 @@ const Agriculture = () => {
     autoplaySpeed: 2000,
   };
 
+  // Responsive font size based on screen width
+  const getResponsiveFontSize = (large, small) => window.innerWidth > 768 ? large : small;
+
   return (
-    
-    <div style={{ backgroundColor: "#e1b470",padding: "40px",
+    <div 
+      style={{ 
+        backgroundColor: "#e1b470",
+        padding: "40px",
         textAlign: "center",
         fontFamily: "'Times New Roman', Times, serif",
-        color: "#333", }}>
-      <h1 style={{ textAlign: "center", fontSize: "4rem", fontWeight: "bold", color: "blue" }}>Agriculture</h1>
-      <div style={{ width: "60%", margin: "0 auto 40px auto" }}>
+        color: "#333",
+      }}
+    >
+      {/* Responsive Heading */}
+      <h1 
+        style={{ 
+          textAlign: "center", 
+          fontSize: getResponsiveFontSize("4rem", "2.5rem"), 
+          fontWeight: "bold", 
+          color: "blue" 
+        }}
+      >
+        Agriculture
+      </h1>
+      
+      <div style={{ width: "80%", maxWidth: "800px", margin: "0 auto 40px auto" }}>
         <Slider {...settings}>
           {images.map((src, index) => (
             <div key={index} style={{ textAlign: "center", color: "#333" }}>
               <img 
-  src={src} 
-  alt={`Slide ${index}`} 
-  style={{ 
-    width: "100%",
+                src={src} 
+                alt={Slide ${index}} 
+                style={{ 
+                  width: "100%",
                   height: "400px",
                   borderRadius: "8px",
                   objectFit: "contain",
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-  }} 
-/>
-              <h3 style={{ marginTop: "10px", fontSize: "18px", textAlign: "center" }}>{texts[index]}</h3>
+                }} 
+              />
+              <h3 style={{ marginTop: "10px", fontSize: getResponsiveFontSize("18px", "16px"), textAlign: "center" }}>
+                {texts[index]}
+              </h3>
             </div>
           ))}
         </Slider>
       </div>
 
-      <h1 style={{ fontSize: "1.5rem", fontWeight: "500", color: "black", textAlign: "center" }}>
+      {/* Responsive Secondary Heading */}
+      <h1 
+        style={{ 
+          fontSize: getResponsiveFontSize("1.5rem", "1.25rem"), 
+          fontWeight: "500", 
+          color: "black", 
+          textAlign: "center" 
+        }}
+      >
         Foundation is attempting to bring technologies in farming through:
       </h1>
 
       <section
         style={{
           margin: "20px auto",
-          width: "60%",
+          width: "80%",
+          maxWidth: "800px",
           textAlign: "left",
         }}
       >
@@ -79,7 +109,7 @@ const Agriculture = () => {
             <li
               key={index}
               style={{
-                fontSize: "16px",
+                fontSize: "1rem",
                 color: "black",
                 fontWeight: "400",
                 margin: "10px 0",
@@ -89,9 +119,8 @@ const Agriculture = () => {
             </li>
           ))}
         </ul>
-      </section>    </div>
-   
-    
+      </section>    
+    </div>
   );
 };
 
