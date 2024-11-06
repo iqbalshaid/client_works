@@ -12,7 +12,7 @@ const Whoweare = () => {
         <h1>About Us</h1>
         <h2>Founders</h2>
         <div className="founder">
-          <Link style={{textDecoration:"none"}} to={'/founder'}><h5>.Shrikrishna Gupta</h5></Link>
+          <Link style={{textDecoration:"none"}} to={'/founder1'}><h5>.Shrikrishna Gupta</h5></Link>
           <p>(Former Outstanding Scientist at Department of Atomic Energy)<br />
             An expert on Accelerator Technologies<br />
             Coordinated with various GOI ministries to promote DAE Technologies for Societal Benefits
