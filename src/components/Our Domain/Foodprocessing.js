@@ -33,7 +33,7 @@ const FoodProcessing = () => {
   return (
     <div
       style={{
-        backgroundColor: "#f5f5f5",
+        backgroundColor: "#e1b470",
         padding: "40px",
         textAlign: "center",
         fontFamily: "'Times New Roman', Times, serif",
