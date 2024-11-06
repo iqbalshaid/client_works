@@ -36,10 +36,13 @@ const Agriculture = () => {
   };
 
   return (
-    <div>
-    <div style={{ backgroundColor: "#e1b470" }}>
+    
+    <div style={{ backgroundColor: "#e1b470",padding: "40px",
+        textAlign: "center",
+        fontFamily: "'Times New Roman', Times, serif",
+        color: "#333", }}>
       <h1 style={{ textAlign: "center", fontSize: "4rem", fontWeight: "bold", color: "blue" }}>Agriculture</h1>
-      <div style={{ width: "80%", margin: "10px auto" }}>
+      <div style={{ width: "60%", margin: "0 auto 40px auto" }}>
         <Slider {...settings}>
           {images.map((src, index) => (
             <div key={index} style={{ textAlign: "center", color: "#333" }}>
@@ -47,9 +50,11 @@ const Agriculture = () => {
   src={src} 
   alt={`Slide ${index}`} 
   style={{ 
-    width: '100%',  
-    borderRadius: '8px', 
-    objectFit:'cover'
+    width: "100%",
+                  height: "400px",
+                  borderRadius: "8px",
+                  objectFit: "contain",
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
   }} 
 />
               <h3 style={{ marginTop: "10px", fontSize: "18px", textAlign: "center" }}>{texts[index]}</h3>
@@ -62,35 +67,31 @@ const Agriculture = () => {
         Foundation is attempting to bring technologies in farming through:
       </h1>
 
-      <ul style={{ textAlign: "left", margin: "20px auto", padding: "0", width: "60%" }}>
-        <li style={{ fontSize: "16px", color: "black", fontWeight: "400", margin: "10px 0" }}>
-          Soil nutrient analysis and suggesting targeted fertilization
-        </li>
-        <li style={{ fontSize: "16px", color: "black", fontWeight: "400", margin: "10px 0" }}>
-          Promoting high yield crop varieties
-        </li>
-        <li style={{ fontSize: "16px", color: "black", fontWeight: "400", margin: "10px 0" }}>
-          Promoting sustainable organic farming practices
-        </li>
-        <li style={{ fontSize: "16px", color: "black", fontWeight: "400", margin: "10px 0" }}>
-          Drip irrigation, sprinkler systems
-        </li>
-        <li style={{ fontSize: "16px", color: "black", fontWeight: "400", margin: "10px 0" }}>
-          Rain water harvesting and ground water recharge
-        </li>
-        <li style={{ fontSize: "16px", color: "black", fontWeight: "400", margin: "10px 0" }}>
-          Bringing Drone based farming practices
-        </li>
-        <li style={{ fontSize: "16px", color: "black", fontWeight: "400", margin: "10px 0" }}>
-          Efficient logistics and transportation
-        </li>
-        <li style={{ fontSize: "16px", color: "black", fontWeight: "400", margin: "10px 0" }}>
-          Efficient post harvest management technologies
-        </li>
-      </ul>
-    </div>
+      <section
+        style={{
+          margin: "20px auto",
+          width: "60%",
+          textAlign: "left",
+        }}
+      >
+        <ul style={{ padding: 0, listStyleType: "none" }}>
+          {texts.map((text, index) => (
+            <li
+              key={index}
+              style={{
+                fontSize: "16px",
+                color: "black",
+                fontWeight: "400",
+                margin: "10px 0",
+              }}
+            >
+              {text}
+            </li>
+          ))}
+        </ul>
+      </section>    </div>
    
-    </div>
+    
   );
 };
 
