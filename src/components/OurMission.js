@@ -3,6 +3,7 @@ import './Ourmission.css';
 
 const Mission = () => {
     return (
+        <div style = {{backgroundColor:'#e1b470'}}>
         <div className="mission-container">
             <div className="mission-header">
                 <h1>Our Mission</h1>
@@ -16,6 +17,7 @@ const Mission = () => {
                     <li>To set up 'Business Promotion Centres' to generate local employment by promoting entrepreneurship and nurturing local entrepreneurs to start companies/small manufacturing units in the rural areas</li>
                 </ul>
             </div>
+        </div>
         </div>
     );
 };
