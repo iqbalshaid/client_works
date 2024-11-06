@@ -64,17 +64,17 @@ const FoodProcessing = () => {
         <Slider {...settings}>
           {images.map((src, index) => (
             <div key={index} style={{ textAlign: "center" }}>
-              <img
-                src={src}
-                alt={Slide ${index}}
-                style={{
-                  width: "100%",
-                  height: "400px",
-                  borderRadius: "8px",
-                  objectFit: "contain",
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                }}
-              />
+              <img 
+  src={src} 
+  alt={`Slide ${index}`} 
+  style={{ 
+    width: "100%",
+    height: "400px",
+    borderRadius: "8px",
+    objectFit: "contain",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+  }} 
+/>
               <h3
                 style={{
                   marginTop: "10px",
