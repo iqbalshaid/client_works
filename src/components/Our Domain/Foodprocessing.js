@@ -2,7 +2,6 @@ import React from "react"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import About_us from "../About_us";
 import ag from "../../photos/f.png"
 import ag1 from "../../photos/f1.png"
 import ag2 from "../../photos/f2.png"
@@ -32,7 +31,11 @@ const FoodProcessing = ()=>{
   
     return (
       <div>
-      <div style={{ backgroundColor: "#e1b470",display:'flex',justify-content:'space-between',gap:'40px',margin:"0px 30px" }}>
+      <div style={{ backgroundColor: "#e1b470", 
+    display: "flex", 
+    justifyContent: "space-between", 
+    gap: "40px", 
+    margin: "0px 30px"  }}>
         <h1 style={{ textAlign: "center", fontSize: "4rem", fontWeight: "bold", color: "blue" }}>Food Preservation and Food Irradiation</h1>
         <div style={{ width: "80%", margin: "10px auto" }}>
           <Slider {...settings}>
