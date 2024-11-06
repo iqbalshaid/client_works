@@ -1,6 +1,5 @@
 .container {
-    max-width: 1000px; /* Maximum width */
-    margin: 40px auto;
+   width:100%;
     padding: 20px;
     background-color: #e1b470; /* Soft cream background */
     border: 1px solid #d3b82f; /* Classic golden border */
