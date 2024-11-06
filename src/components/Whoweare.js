@@ -19,7 +19,7 @@ const Whoweare = () => {
           </p>
         </div>
         <div className="founder">
-          <Link style={{textDecoration:"none"}} to={'/founder1'}><h5>.Dr.Lalit Varshney</h5></Link>
+          <Link style={{textDecoration:"none"}} to={'/founder'}><h5>.Dr.Lalit Varshney</h5></Link>
           <p>(Former Head, Radiation Technology Development Division, BARC)<br />
             An Expert on Sludge Hygenisation & Waste Water Treatment<br />
             Implemented many DAE Technologies for Rural Applications in the field
