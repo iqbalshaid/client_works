@@ -44,6 +44,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+               background-color: #e1b470;
   }
   
   .section {
