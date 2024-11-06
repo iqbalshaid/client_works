@@ -29,7 +29,7 @@ const CleanWater = ()=>{
         fontFamily: "'Times New Roman', Times, serif",
         color: "#333", }}>
         <h1 style={{ textAlign: "center", fontSize: "4rem", fontWeight: "bold", color: "blue" }}>Safe Drinking Water</h1>
-        <div style={{ width: "80%", margin: "10px auto" }}>
+        <div style={{ width: "80%", margin: "0 auto 40px auto" }}>
           <Slider {...settings}>
             {images.map((src, index) => (
               <div key={index} style={{ textAlign: "center", color: "#333" }}>
@@ -37,9 +37,11 @@ const CleanWater = ()=>{
     src={src} 
     alt={`Slide ${index}`} 
     style={{ 
-      width: '100%',  
-      borderRadius: '8px', 
-      objectFit:'cover'
+      width: "100%",
+height: "400px",
+borderRadius: "8px",
+objectFit: "contain",
+boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     }} 
   />
                 <h3 style={{ marginTop: "10px", fontSize: "18px", textAlign: "center" }}>{texts[index]}</h3>
