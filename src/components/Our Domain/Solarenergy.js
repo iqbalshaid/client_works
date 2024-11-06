@@ -32,7 +32,7 @@ const SolarEnergy = ()=>{
               <div key={index} style={{ textAlign: "center", color: "#333",height:'500px' }}>
                 <img 
     src={src} 
-    alt={`Slide ${index}`} 
+    alt={Slide ${index}} 
     style={{ 
       width: "100%",
                   height: "400px",
