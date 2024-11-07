@@ -1,4 +1,3 @@
-
 import React from 'react'
 import './About.css'
 import partner from '../photos/partner.jpg'
