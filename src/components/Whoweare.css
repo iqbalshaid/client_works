@@ -44,7 +44,7 @@
 
 /* Reduced font size for founder names (h5) */
 .founder h5 {
-  font-size: 1.25rem; /* Reduced from 1.75em */
+  font-size: 1.3rem; /* Reduced from 1.75em */
   margin-bottom: 10px;
   color: black;
   cursor: pointer;
@@ -52,7 +52,7 @@
 
 /* Smaller, standard font size for founder description (p) */
 .founder p {
-  font-size: 1rem; /* Reduced from 1.5em */
+  font-size: 1.2rem; /* Reduced from 1.5em */
   line-height: 1.6;
   color: black;
 }
@@ -102,5 +102,3 @@
       transform: translateY(0);
   }
 }
-
-
